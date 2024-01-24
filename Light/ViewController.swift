@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet var lightStatus: UILabel!
+    
     var lightOn = true
     
     override func viewDidLoad() {
@@ -17,7 +20,13 @@ class ViewController: UIViewController {
     }
 
     func updateUI() {
-        view.backgroundColor = lightOn ? .white : .black
+        if lightOn {
+            view.backgroundColor = .white
+            lightStatus.text = "Tap anywhere to turn off the light."
+        } else {
+            view.backgroundColor = .black
+            lightStatus.text = "Tap anywhere to turn on the light."
+        }
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
