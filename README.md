@@ -4,5 +4,5 @@ Light is an iOS app that changes the screen from black to white, and back again,
 # What I learned
 - Use Xcode documentation;
 - Set breakpoints;
-- Create oulets and actions;
+- Create oulets and actions.
   
